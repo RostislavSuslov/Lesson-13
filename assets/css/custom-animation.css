@@ -1,0 +1,131 @@
+.social-list {
+    background: antiquewhite;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    margin: 100px auto;
+}
+
+.social-list li {
+    list-style: none;
+    margin: 1px;
+}
+
+.social-list .item {
+    width: 84px;
+    height: 84px;
+    background-image: url(/assets/img/spice-social.png);
+    display: block;
+    background-position: 0px -168px;
+    transition: .4s;
+}
+
+
+.item.item-facebook {
+    background-position: 0px -168px;
+}
+.item-facebook:hover{
+    background-position-y: -84px;
+}
+
+
+.item.item-linkedin {
+    background-position: -336px -168px;
+}
+
+.item-linkedin:hover{
+    background-position-y: -84px;
+}
+
+
+.item.item-pinterest {
+    background-position: -420px -168px;
+}
+
+.item.item-pinterest:hover{
+    background-position-y: -84px;
+}
+
+.item.item-skype{
+    background-position: -588px -168px;
+}
+
+.item.item-skype:hover{
+    background-position-y: -84px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#animation {
+    background-color: #b700ff;
+    animation: example 5s linear 2s infinite;
+}
+
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+.animation-cat-y{
+    width: 222px;
+    height: 92px;
+    background: url(/assets/img/sprite-cat.png);
+    background-repeat: no-repeat;
+    animation: cat-run-y 1s steps(12) infinite;
+}
+
+@keyframes cat-run-y {
+    0% {
+        background-position-y: 0;
+    }
+    
+    100% {
+        background-position-y: -1071px; /*!!!!!*/
+    }
+}
+
+
+.animation-cat-x{
+    width: 222px;
+    height: 132px;
+    background: url(/assets/img/sprite-cat-x.png);
+    background-repeat: no-repeat;
+    animation: cat-run-x 1s steps(8) infinite;
+}
+
+@keyframes cat-run-x {
+    0% {
+        background-position-x: 0;
+    }
+    
+    100% {
+        background-position-x: -1744px; /*!!!!!*/
+    }
+}
+
+.social-list {
+    animation:  custom-transform 4s infinite;
+}
+
+@keyframes custom-transform {
+    0% {
+        transform:  skew(0, 0);
+    }
+    50%{
+        transform: skew(-5deg, -5deg);
+    }
+    100%{
+        transform: skew(0, 0);
+    }
+}

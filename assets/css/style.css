@@ -3,6 +3,7 @@
 @import url('header.css');
 @import url('table-tag.css');
 @import url('nth-child.css');
+@import url('custom-animation.css');
 :root {
     --background: #ffffff;
     --table-primary-color:orangered;
@@ -268,3 +269,4 @@ strong {
         font-size: 28px;
     }
 }
+
