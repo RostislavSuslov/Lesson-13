@@ -1,0 +1,52 @@
+form.template-form {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 12px 24px;
+    background: url(/assets/img/form-parallax.jpg) center repeat;
+    background-attachment: fixed;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    background: #f0ffffa6;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.form-row label {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.form-row input {
+    border-radius: 4px;
+    border: 1px solid #000;
+    font-size: 18px;
+    padding: 9.5px 15px;
+}
+
+.form-container {
+    padding: 82px 0 96px;
+}
+
+.form-row input:focus {}
+
+.form-row input:focus-visible {
+    outline: none;
+    box-shadow: 1px 2px 5px #0000008c;
+}
+
+input[type="color"] {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 0;
+    overflow: hidden;
+}
+
+ 

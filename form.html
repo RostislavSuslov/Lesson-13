@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson-11</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap-5.min.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap-example.css">
+  <link rel="stylesheet" href="/assets/css/nice-select.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+  <link rel="stylesheet" href="/assets/css/form.css">
+</head>
+
+<body class="bootstrap-page">
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo.svg" alt="logo">
+      </a>
+      <ul class="header-nav">
+        <li class="header-nav__item">
+          <a href="about.html" class="header-nav__item-link">About</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="flex-box.html" class="header-nav__item-link">flex-box</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="position.html" class="header-nav__item-link">Position</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="catalog.html" class="header-nav__item-link">Catalog</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="table-tag.html" class="header-nav__item-link">Table tags</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="bootstrap-example.html" class="header-nav__item-link">bootstrap 5</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="nth-child.html" class="header-nav__item-link">nth-child</a>
+        </li>
+        <li class="header-nav__item">
+            <a href="form.html" class="header-nav__item-link">form</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="form-container">
+      <form class="template-form">
+          <div class="form-row">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" placeholder="Username">
+          </div>
+         
+          <div class="form-row">
+              <label for="telephone">Telephone:</label>
+              <input type="tel" id="telephone" name="telephone" placeholder="+38(000)00-00-000" value="+38">
+          </div>
+         
+          <div class="form-row">         
+              <label for="cars">Choose a car:</label>
+              <select name="cars" id="cars" class="custom-select">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab"> <span>Saab</span> </option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+              </select>
+
+              <label for="cars">Choose a car:</label>
+              <select name="cars" id="cars2" >
+                  <optgroup label="Swedish Cars">
+                      <option value="volvo">Volvo</option>
+                      <option value="saab">Saab</option>
+                  </optgroup>
+                  <optgroup label="German Cars">
+                      <option value="mercedes">Mercedes</option>
+                      <option value="audi">Audi</option>
+                  </optgroup>
+              </select>
+          </div>
+
+          <div class="form-row">
+             
+              <input type="submit">
+          </div>
+      </form>
+  </div>
+
+    <div class="form-container">
+        <form class="template-form">
+            <div class="form-row">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-row">
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd" placeholder="password">
+            </div>
+            <div class="form-row">
+                <label for="telephone">Telephone:</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="+38(000)00-00-000" value="+38">
+            </div>
+            <div class="form-row">
+                <label for="search">Search:</label>
+                <input type="search" id="search" name="search">
+            </div>
+            <div class="form-row">
+                <p>Audio settings:</p>
+                <input type="range">
+                <div>
+                  <input type="range" id="volume" name="volume"
+                         min="0" max="4">
+                  <label for="volume">Volume</label>
+                </div>
+                
+                <div>
+                  <input type="range" id="cowbell" name="cowbell" 
+                         min="0" max="100" value="90" step="10">
+                  <label for="cowbell">Cowbell</label>
+                </div>
+                
+            </div>
+            <div class="form-row">
+               
+                    <p>Please select your preferred contact method:</p>
+                    <div>
+                      <input type="radio" id="contactChoice1" name="contact" value="email">
+                      <label for="contactChoice1">Email</label>
+                  
+                      <input type="radio" id="contactChoice2" name="contact" value="phone">
+                      <label for="contactChoice2">Phone</label>
+                  
+                      <input type="radio" id="contactChoice3" name="contact" value="mail">
+                      <label for="contactChoice3">Mail</label>
+
+                      <input type="radio" id="contactChoice4" name="contact" value="Telegram">
+                      <label for="contactChoice4">Telegram</label>
+                    </div>
+                  
+                    <div>
+                        <input type="radio" id="red" name="color" value="red">
+                        <label for="red">red</label>
+                    
+                        <input type="radio" id="yellow" name="color" value="yellow">
+                        <label for="yellow">yellow</label>
+                    
+                        <input type="radio" id="black" name="color" value="black">
+                        <label for="black">black</label>
+        
+                        <input type="radio" id="green" name="color" value="green">
+                        <label for="green">green</label>
+                      </div>
+                  
+            </div>
+            <div class="form-row">
+                <label for="number">Number:</label>
+                <input type="number" id="number" name="number">
+            </div>
+            <div class="form-row">
+                <input type="file">
+            </div>
+         
+            <div class="form-row">
+                <input type="date">
+            </div>
+            <div class="form-row">
+                <input type="color">
+            </div>
+            <div class="form-row">
+                <div>
+                    <input type="checkbox" id="pn" name="pn" checked>
+                    <label for="pn">Пн</label>
+                  </div>
+              
+                  <div>
+                    <input type="checkbox" id="vt" name="vt">
+                    <label for="vt">Вт</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" id="cr" name="cr">
+                    <label for="cr">Ср</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" id="cht" name="cht">
+                    <label for="cht">Чт</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" id="pt" name="pt">
+                    <label for="pt">Пт</label>
+                  </div>
+            </div>
+            <div class="form-row">         
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                    <optgroup label="Swedish Cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                    </optgroup>
+                        <optgroup label="German Cars">
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <input type="button" value="Close">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">1...</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">3...</div>
+      </div>
+  </main>
+  <footer>
+  </footer>
+
+  
+  <script src="/assets/js/jquery-3.6.1.min.js"></script>
+  <script src="/assets/js/jquery.mask.min.js"></script>
+  <script src="/assets/js/jquery.nice-select.min.js"></script>
+  <script src="/assets/js/bootstrap5.min.js"></script>
+  <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

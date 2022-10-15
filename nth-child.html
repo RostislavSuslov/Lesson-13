@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-6</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-5.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+ 
+</head>
+
+<body class="position-page">
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.svg" alt="logo">
+            </a>
+            <ul class="header-nav">
+                <li class="header-nav__item">
+                    <a href="about.html"  class="header-nav__item-link">About</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="flex-box.html"  class="header-nav__item-link">flex-box</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="position.html"  class="header-nav__item-link">Position</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="catalog.html"  class="header-nav__item-link">Catalog</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="table-tag.html"  class="header-nav__item-link">Table tags</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="bootstrap-example.html"  class="header-nav__item-link">bootstrap 5</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="nth-child.html"  class="header-nav__item-link">nth-child</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="form.html" class="header-nav__item-link">form</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="example">
+            <div class="container container-overflow-x">
+                <h2 class="example-title">Default</h2>
+                <div class="example-row d-flex justify-content-between">
+                    <div class="child-item">1</div>
+                    <div class="child-item">2</div>
+                    <div class="child-item">3</div>
+                    <div class="child-item">4</div>
+                    <div class="child-item">5</div>
+                    <div class="child-item">6</div>
+                    <div class="child-item">7</div>
+                    <div class="child-item">8</div>
+                    <div class="child-item">9</div>
+                    <div class="child-item">10</div>
+                </div>
+            </div>
+        </section>
+        <section class="example">
+            <div class="container container-overflow-x">
+                <h2 class="example-title">first-child только первый</h2>
+                <div class="example-row d-flex justify-content-between first-child">
+                    <div class="child-item">1</div>
+                    <div class="child-item">2</div>
+                    <div class="child-item">3</div>
+                    <div class="child-item">4</div>
+                    <div class="child-item">5</div>
+                    <div class="child-item">6</div>
+                    <div class="child-item">7</div>
+                    <div class="child-item">8</div>
+                    <div class="child-item">9</div>
+                    <div class="child-item">10</div>
+                </div>
+            </div>
+        </section>
+        <section class="example">
+            <div class="container container-overflow-x">
+                <h2 class="example-title">last-child только последний</h2>
+                <div class="example-row d-flex justify-content-between last-child">
+                    <div class="child-item">1</div>
+                    <div class="child-item">2</div>
+                    <div class="child-item">3</div>
+                    <div class="child-item">4</div>
+                    <div class="child-item">5</div>
+                    <div class="child-item">6</div>
+                    <div class="child-item">7</div>
+                    <div class="child-item">8</div>
+                    <div class="child-item">9</div>
+                    <div class="child-item">10</div>
+                </div>
+            </div>
+        </section>
+        <section class="example">
+            <div class="container container-overflow-x">
+                <h2 class="example-title">:nth-child(7) только седьмой</h2>
+                <div class="example-row d-flex justify-content-between nth-child-7">
+                    <div class="child-item">1</div>
+                    <div class="child-item">2</div>
+                    <div class="child-item">3</div>
+                    <div class="child-item">4</div>
+                    <div class="child-item">5</div>
+                    <div class="child-item">6</div>
+                    <div class="child-item">7</div>
+                    <div class="child-item">8</div>
+                    <div class="child-item">9</div>
+                    <div class="child-item">10</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="example">
+            <div class="container container-overflow-x">
+                <h2 class="example-title">:nth-child(odd) Каждый нечётный </h2>
+                <div class="example-row d-flex justify-content-between nth-child-odd">
+                    <div class="child-item">1</div>
+                    <div class="child-item">2</div>
+                    <div class="child-item">3</div>
+                    <div class="child-item">4</div>
+                    <div class="child-item">5</div>
+                    <div class="child-item">6</div>
+                    <div class="child-item">7</div>
+                    <div class="child-item">8</div>
+                    <div class="child-item">9</div>
+                    <div class="child-item">10</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="example">
+            <div class="container container-overflow-x">
+                <h2 class="example-title">:nth-child(even) Каждый чётный </h2>
+                <div class="example-row d-flex justify-content-between nth-child-even">
+                    <div class="child-item">1</div>
+                    <div class="child-item">2</div>
+                    <div class="child-item">3</div>
+                    <div class="child-item">4</div>
+                    <div class="child-item">5</div>
+                    <div class="child-item">6</div>
+                    <div class="child-item">7</div>
+                    <div class="child-item">8</div>
+                    <div class="child-item">9</div>
+                    <div class="child-item">10</div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="example">
+            <div class="container container-overflow-x">
+                <h2 class="example-title">:nth-child(3n)  n - Это каждый. в данном случае каждый третий.  Счётчик начинается с нуля, а элементы с еденицы  </h2>
+                <div class="example-row d-flex justify-content-between nth-child-3n">
+                    <div class="child-item">1</div>
+                    <div class="child-item">2</div>
+                    <div class="child-item">3</div>
+                    <div class="child-item">4</div>
+                    <div class="child-item">5</div>
+                    <div class="child-item">6</div>
+                    <div class="child-item">7</div>
+                    <div class="child-item">8</div>
+                    <div class="child-item">9</div>
+                    <div class="child-item">10</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="example">
+            <div class="container container-overflow-x">
+                <h2 class="example-title">:nth-child(3n+4) Каждый 3-й начиная с четвертого. </h2>
+                <div class="example-row d-flex justify-content-between nth-child-3n4">
+                    <div class="child-item">1</div>
+                    <div class="child-item">2</div>
+                    <div class="child-item">3</div>
+                    <div class="child-item">4</div>
+                    <div class="child-item">5</div>
+                    <div class="child-item">6</div>
+                    <div class="child-item">7</div>
+                    <div class="child-item">8</div>
+                    <div class="child-item">9</div>
+                    <div class="child-item">10</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="example">
+            <div class="container container-overflow-x">
+                <h2 class="example-title">:nth-child(3n+4) Каждый 3-й начиная с четвертого   </h2>
+                <div class="example-row d-flex justify-content-between nth-child-3n4">
+                    <div class="child-item">1</div>
+                    <div class="child-item">2</div>
+                    <div class="child-item">3</div>
+                    <div class="child-item">4</div>
+                    <div class="child-item">5</div>
+                    <div class="child-item">6</div>
+                    <div class="child-item">7</div>
+                    <div class="child-item">8</div>
+                    <div class="child-item">9</div>
+                    <div class="child-item">10</div>
+                </div>
+            </div>
+        </section>
+        <section class="example">
+            <div class="container container-overflow-x">
+                <h2 class="example-title">:nth-child(-3n+15) Каждый 3-й начиная с 15-го в обратную сторону</h2>
+                <div class="example-row d-flex justify-content-between nth-child--3n4">
+                    <div class="child-item">1</div>
+                    <div class="child-item">2</div>
+                    <div class="child-item">3</div>
+                    <div class="child-item">4</div>
+                    <div class="child-item">5</div>
+                    <div class="child-item">6</div>
+                    <div class="child-item">7</div>
+                    <div class="child-item">8</div>
+                    <div class="child-item">9</div>
+                    <div class="child-item">10</div>
+                    <div class="child-item">11</div>
+                    <div class="child-item">12</div>
+                    <div class="child-item">13</div>
+                    <div class="child-item">14</div>
+                    <div class="child-item">15</div>
+                    <div class="child-item">16</div>
+                    <div class="child-item">17</div>
+                    <div class="child-item">18</div>
+                    <div class="child-item">19</div>
+                    <div class="child-item">20</div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+</body>
+
+</html>

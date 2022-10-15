@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson-9</title>
+  <link rel="stylesheet" href="/assets/css/bootstrap-5.min.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap-example.css">
+  <link rel="stylesheet" href="/assets/css/header.css">
+</head>
+
+<body class="bootstrap-page">
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo.svg" alt="logo">
+      </a>
+      <ul class="header-nav">
+        <li class="header-nav__item">
+          <a href="about.html" class="header-nav__item-link">About</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="flex-box.html" class="header-nav__item-link">flex-box</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="position.html" class="header-nav__item-link">Position</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="catalog.html" class="header-nav__item-link">Catalog</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="table-tag.html" class="header-nav__item-link">Table tags</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="bootstrap-example.html" class="header-nav__item-link">bootstrap 5</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="nth-child.html" class="header-nav__item-link">nth-child</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="form.html" class="header-nav__item-link">form</a>
+      </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section class="example">
+      <div class="container container-overflow-x">
+          <h2 class="example-title">hover, active, focus</h2>
+          <div class="example-row d-flex justify-content-between">
+            <button type="button" class="btn btn-secondary">Secondary</button>
+          </div>
+      </div>
+  </section>
+
+    <div class="container">
+
+
+
+
+      
+      <section class="accordion-faq">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Як я можу зробити грошовий внесок для певного проекту?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Які є гарантії того, що кошти підуть саме на ту справу, що указана в назві проекту?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Де я можу прочитати звіти щодо завершених проектів?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headinMy">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseMy" aria-expanded="false" aria-controls="collapseMy">
+                Чим відрізняються акції та проекти фонду?
+              </button>
+            </h2>
+            <div id="collapseMy" class="accordion-collapse collapse" aria-labelledby="headingMy"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingCustom">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseCustom" aria-expanded="false" aria-controls="collapseCustom">
+                Чим відрізняються акції та проекти фонду? 555
+              </button>
+            </h2>
+            <div id="collapseCustom" class="accordion-collapse collapse" aria-labelledby="headingCustom"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </section>
+
+    </div>
+  </main>
+  <footer>
+  </footer>
+
+
+
+  <script src="/assets/js/bootstrap5.min.js"></script>
+</body>
+
+</html>
