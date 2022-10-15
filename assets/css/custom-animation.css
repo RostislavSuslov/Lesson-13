@@ -2,13 +2,24 @@
     background: antiquewhite;
     display: flex;
     justify-content: center;
-    padding: 100px;
+    padding: 50px;
     margin: 100px auto;
+    background-image: url(/assets/img/spice-social.png);
+    background-size: 286px;
+}
+
+.social-list nav,
+.social-list h4 {
+    display: flex;
+    padding: 39px 50px;
+    background: #ffffffd9;
+    border-radius: 10px;
+    margin: 7px;
 }
 
 .social-list li {
     list-style: none;
-    margin: 1px;
+
 }
 
 .social-list .item {
@@ -17,14 +28,22 @@
     background-image: url(/assets/img/spice-social.png);
     display: block;
     background-position: 0px -168px;
-    transition: .4s;
+    transition: .7s;
 }
 
+.social-list .item:hover {
+    transform: matrix3d(1.323512, 0.337331, 0, 0.000478, 
+    -0.353047, 1.143763, 0, 0.000263, 
+    0, 0, 1, 0, 
+    3.297923, -34.814553, 0, 1);
+transform-origin: -60px -40px 0px;
+}
 
 .item.item-facebook {
     background-position: 0px -168px;
 }
-.item-facebook:hover{
+
+.item-facebook:hover {
     background-position-y: -84px;
 }
 
@@ -33,7 +52,7 @@
     background-position: -336px -168px;
 }
 
-.item-linkedin:hover{
+.item-linkedin:hover {
     background-position-y: -84px;
 }
 
@@ -42,15 +61,15 @@
     background-position: -420px -168px;
 }
 
-.item.item-pinterest:hover{
+.item.item-pinterest:hover {
     background-position-y: -84px;
 }
 
-.item.item-skype{
+.item.item-skype {
     background-position: -588px -168px;
 }
 
-.item.item-skype:hover{
+.item.item-skype:hover {
     background-position-y: -84px;
 }
 
@@ -71,13 +90,24 @@
 }
 
 @keyframes example {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
 }
 
-.animation-cat-y{
+.animation-cat-y {
     width: 222px;
     height: 92px;
     background: url(/assets/img/sprite-cat.png);
@@ -89,14 +119,15 @@
     0% {
         background-position-y: 0;
     }
-    
+
     100% {
-        background-position-y: -1071px; /*!!!!!*/
+        background-position-y: -1071px;
+        /*!!!!!*/
     }
 }
 
 
-.animation-cat-x{
+.animation-cat-x {
     width: 222px;
     height: 132px;
     background: url(/assets/img/sprite-cat-x.png);
@@ -108,24 +139,31 @@
     0% {
         background-position-x: 0;
     }
-    
+
     100% {
-        background-position-x: -1744px; /*!!!!!*/
+        background-position-x: -1744px;
+        /*!!!!!*/
     }
 }
 
 .social-list {
-    animation:  custom-transform 4s infinite;
+    animation: custom-transform 4s infinite;
 }
 
 @keyframes custom-transform {
     0% {
-        transform:  skew(0, 0);
+        transform: skew(0, 0);
     }
-    50%{
-        transform: skew(-5deg, -5deg);
+
+    25% {
+        transform: skew(-1deg, -1deg);
     }
-    100%{
+
+    50% {
+        transform: skew(1deg, 1deg);
+    }
+
+    100% {
         transform: skew(0, 0);
     }
 }
